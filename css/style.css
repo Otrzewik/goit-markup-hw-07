@@ -45,13 +45,7 @@ body {
   font-weight: 700;
 }
 
-/* -- Heaer -- */
-
-.header {
-  border-bottom: 1px solid #ececec;
-  padding-top: 25px;
-  padding-bottom: 24px;
-}
+/* -- Header -- */
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -165,7 +159,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -223,77 +217,216 @@ body {
   max-width: 696px;
 }
 
-.icons-main {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 94px;
+/* Section - 2 DESKTOP */
+
+@media screen and (min-width: 1200px) {
+  .icons-main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 94px;
+  }
+
+  .icons_1 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    width: 270px;
+    padding: 25px 0;
+  }
+
+  .title-section1-set {
+    margin-bottom: 30px;
+  }
+
+  .title-section2-0 {
+    color: var(--brand-color-black);
+    line-height: 1.2;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .text {
+    color: var(--brand-color-lightgrey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    padding-top: 10px;
+  }
+
+  .headline-section2-1 {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .list-main {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 94px;
+    padding-top: 30px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 108px;
+    gap: 30px;
+    padding-bottom: 94px;
+  }
 }
 
-.icons_1 {
-  width: 70px;
-  height: 70px;
+/* section 2-0 TABLET */
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .container {
+    max-width: 1199px;
+  }
+
+  .list-main {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 94px;
+    padding-top: 30px;
+  }
+
+  .icons-main {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 94px;
+  }
+
+  .icons_1 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    width: 270px;
+    padding: 25px 0;
+  }
+
+  .list-main {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 94px;
+    padding-top: 30px;
+  }
+
+  text {
+    color: var(--brand-color-lightgrey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    padding-top: 10px;
+  }
 }
 
-.icon-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  width: 270px;
-  padding: 25px 0;
+/* section 2-0 MOBILE */
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .icons-main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 94px;
+  }
+
+  .icons_1 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    width: 270px;
+    padding: 25px 0;
+  }
+
+  .title-section1-set {
+    margin-bottom: 30px;
+  }
+
+  .title-section2-0 {
+    color: var(--brand-color-black);
+    line-height: 1.2;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .text {
+    color: var(--brand-color-lightgrey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    padding-top: 10px;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .headline-section2-1 {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .list-main {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 94px;
+    padding-top: 30px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 108px;
+    gap: 30px;
+    padding-bottom: 94px;
+  }
 }
 
-.title-section1-set {
-  margin-bottom: 30px;
-}
-
-.title-section2-0 {
-  color: var(--brand-color-black);
-  line-height: 1.2;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.text {
-  color: var(--brand-color-lightgrey);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  padding-top: 10px;
-}
-
-.headline-section2-1 {
-  font-weight: 700;
-  font-size: 36px;
-  text-align: center;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  padding-top: 0;
-  padding-bottom: 50px;
-}
-
-.list-main {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  gap: 30px;
-  padding-bottom: 94px;
-  padding-top: 30px;
-}
-
-.list {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  padding-bottom: 108px;
-  gap: 30px;
-  padding-bottom: 94px;
-}
+/* END OF SECTION 2-0 */
 
 .headline-section3 {
   font-weight: 700;
@@ -375,7 +508,6 @@ body {
   fill: var(--brand-color-white);
   transition: background-color 250ms, fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .people-jobs-fd {
@@ -626,7 +758,7 @@ body {
 /* -- Portfolio -- */
 
 .is-active {
-  position: relative; 
+  position: relative;
   color: var(--brand-color-blue);
   margin-top: 25px;
 }
@@ -774,7 +906,6 @@ body {
   display: flex; /* Ustawienie na flex, aby wyśrodkować zawartość */
   justify-content: center; /* Wyśrodkowanie wzdłuż osi X */
   align-items: center; /* Wyśrodkowanie wzdłuż osi Y */
-  
 }
 
 .modal-close:hover,
