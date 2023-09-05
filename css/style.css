@@ -634,6 +634,12 @@ body {
     font-size: 14px;
     font-weight: 700;
   }
+
+  .clients{
+
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* MOBILE */
@@ -690,6 +696,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+   
   }
   .icons-main {
     display: flex;
@@ -726,6 +733,7 @@ body {
 
   .icon-element {
     width: 100%;
+    padding: 0 15px;
   }
 
   .text {
