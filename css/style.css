@@ -51,18 +51,18 @@ body {
   margin: 0 auto;
 }
 
-.container {
+/* .container {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-}
+} */
 
-.main-content {
+/* .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 200px 0;
-}
+} */
 
 .btn {
   background-color: var(--brand-color-blue);
@@ -114,6 +114,19 @@ body {
 
 @media screen and (min-width: 1200px) {
   /* -- Heaer -- */
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 0;
+  }
+  
 
   .header {
     border-bottom: 1px solid #ececec;
@@ -204,6 +217,19 @@ body {
   .header-list {
     display: flex;
     align-items: center;
+  }
+
+  .section1 {
+    background-image: url("../images/Main_page/Img17.jpg");
+    background-position: center;
+    color: var(--brand-color-white);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 
   .link:hover,
@@ -301,7 +327,6 @@ body {
   }
   .input-mail {
     margin-top: 20px;
-    margin-bottom: 94px;
     border: 1px solid #ffffff4d;
     box-shadow: 0px 4px 4px 0px #00000026;
     border-radius: 4px;
@@ -315,7 +340,6 @@ body {
     padding: 15px;
     width: 358px;
     margin-right: 12px;
-    margin-left: 78px;
   }
 
   .text-news {
@@ -325,17 +349,16 @@ body {
     line-height: 1.14;
     color: var(--brand-color-white);
     letter-spacing: 0.06rem;
-    margin-left: 78px;
+    
   }
   .links-footer {
     margin-left: 70px;
     list-style: none;
   }
-  /* .footer-sections {
+  .footer-sections {
      display: flex;
-    flex-direction: ; 
-    align-items: center;
-    width: 100%;} */
+    
+  }
   .menu-toggle {
     display: none;
   }
@@ -347,6 +370,19 @@ body {
   .header-container {
     /* max-width: 1199px; */
     display: flex;
+  }
+
+  .container{
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 0;
   }
 
   .menu-toggle {
@@ -606,6 +642,13 @@ body {
   body {
     max-width: 767px;
   }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 0;
+  }
   .header-logo {
     font-family: "Raleway", sans-serif;
     color: var(--brand-color-black2);
@@ -647,8 +690,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 15px;
-    margin-right: 15px;  
   }
   .icons-main {
     display: flex;
@@ -665,7 +706,7 @@ body {
     align-items: center;
     background-color: #f5f4fa;
     border-radius: 4px;
-    width: 99%;
+
     padding: 25px 0;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -684,7 +725,7 @@ body {
   }
 
   .icon-element {
-    width: 450px;
+    width: 100%;
   }
 
   .text {
@@ -757,13 +798,15 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-  .footer-sections .container{
+  .footer-sections {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    }
-    
+  }
+
   .input-mail {
     border: 1px solid #ffffff4d;
     box-shadow: 0px 4px 4px 0px #00000026;
@@ -776,7 +819,7 @@ body {
       linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
     background: #2f303a;
     padding: 15px;
-    width: 358px;
+    width: 100%;
     margin-top: 20px;
   }
   .submit_btn {
@@ -1066,9 +1109,11 @@ body {
   padding-top: 12px;
 }
 
-.footer-sections {
+/* .footer-sections {
   display: flex;
-}
+  flex-wrap: wrap;
+  
+} */
 
 /* WSTAWIC OSOBNY DLA KAZDEJ WIELKOSCI */
 
